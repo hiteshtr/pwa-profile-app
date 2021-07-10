@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { ShortProfile } from '../components/ShortProfile'
 
 export default function Home() {
   return (
@@ -23,47 +24,32 @@ export default function Home() {
           </code>
         </p>
 
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <section className="container mx-auto p-10 md:py-20 px-0 md:p-10 md:px-0">
+          <section className="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 items-start">
+            {/* <article class="p-6 mt-6 transform duration-300 hover:-translate-y-1 cursor-pointer  hover:shadow-2xl group">
+              <div class="relative max-h-125 overflow-hidden">
+                  <img class="absolute" src="https://images.unsplash.com/photo-1606763106075-85bfbe11e07f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=934&amp;q=80" alt=""/>
+                  <img class="relative transform duration-500 group-hover:opacity-0" src="https://images.unsplash.com/photo-1606763106198-4ffc663c2419?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=934&amp;q=80" alt=""/>
+              </div>
+              <div class="p-4 absolute bg-gray-200 rounded-full top-10 right-10 transform duration-500 opacity-0 group-hover:opacity-100">
+                  <a target="_blank" href="https://unsplash.com/@guilhermestecanella">
+                      <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgba(0,0,0,0.5)">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+                  </a>
+              </div>
+              <ul class="mt-6 font-semibold text-gray-500">
+                  <li class="inline mr-3 pb-1 border-b-2 border-green-500">Features</li>
+                  <li class="inline mr-3 pb-1 border-b-2 border-green-500">Fashion</li>
+              </ul>
+              <p class="mt-6  text-xl leading-relaxed text-gray-700">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe aliquid atque officia? Earum dolores voluptatibus reiciendis, excepturi corporis corrupti eaque!
+              </p>
+              <p class="text-gray-400 mt-10 font-semibold">23rd March, 2021</p>
+            </article> */}
+            <ShortProfile/>
+          </section>
+        </section>
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
